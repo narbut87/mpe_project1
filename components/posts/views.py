@@ -25,3 +25,7 @@ def new_post(request):
         post.save()
         return redirect('index')
     return render(request, 'posts/new.html', {'form': form})
+
+
+def catalog(request):
+    return render(request, 'catalog.html')
